@@ -1,10 +1,13 @@
 cart = []
-n = " "
 
 print("Enter the name of elements : ")
 
-while(n != "done"):
-    n = input()
-    cart.append(n)
+while True:
+    item = input()
+
+    if item == "done":
+        break
+    
+    cart.append(item)
 
 print(cart)
